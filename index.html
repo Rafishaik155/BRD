@@ -15,31 +15,33 @@
       background: linear-gradient(to bottom right, #d0e8ff, #eaf4ff);
       min-height: 100vh;
     }
-   .navbar {
+.navbar {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: center;
   padding: 1rem 2rem;
   background-color: white;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  flex-wrap: wrap;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
 }
 
 .home-button {
+  position: absolute;
+  left: 2rem;
   font-size: 1.5rem;
   font-weight: bold;
   color: #007bff;
   text-decoration: none;
 }
 
-.title {
-  flex: 1 1 100%;
-  text-align: center;
-  font-size: 2rem;
+.page-title {
+  font-size: 1.8rem;
   font-weight: 600;
-  color: #000; /* Changed from blue to black */
-  margin-top: 1rem;
+  color: #000;
+  text-align: center;
+  width: 100%;
 }
+
     .card-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -67,10 +69,11 @@
   </style>
 </head>
 <body>
-  <div class="navbar">
+ <div class="navbar">
   <a href="index.html" class="home-button">FDI</a>
-  <div class="title">Business Requirement Documents Library</div>
+  <div class="page-title">Business Requirement Documents Library</div>
 </div>
+
   <div class="card-grid">
     <a class="card" href="executive-summary.html">Executive Summary</a>
     <a class="card" href="project-description.html">Project Description</a>
