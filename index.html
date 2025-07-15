@@ -15,26 +15,31 @@
       background: linear-gradient(to bottom right, #d0e8ff, #eaf4ff);
       min-height: 100vh;
     }
-    .navbar {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      padding: 1rem 2rem;
-      background-color: white;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    .home-button {
-      font-size: 1.5rem;
-      font-weight: bold;
-      color: #007bff;
-      text-decoration: none;
-      margin-bottom: 0.5rem;
-    }
-    .title {
-      font-size: 1.8rem;
-      font-weight: 600;
-      color: #007bff;
-    }
+   .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  flex-wrap: wrap;
+}
+
+.home-button {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.title {
+  flex: 1 1 100%;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #000; /* Changed from blue to black */
+  margin-top: 1rem;
+}
     .card-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -63,9 +68,9 @@
 </head>
 <body>
   <div class="navbar">
-    <a href="index.html" class="home-button">FDI</a>
-    <div class="title">Business Requirement Documents Library</div>
-  </div>
+  <a href="index.html" class="home-button">FDI</a>
+  <div class="title">Business Requirement Documents Library</div>
+</div>
   <div class="card-grid">
     <a class="card" href="executive-summary.html">Executive Summary</a>
     <a class="card" href="project-description.html">Project Description</a>
