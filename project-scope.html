@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Project Scope</title>
+  <title>BRD Section</title>
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -24,20 +24,30 @@
     }
     .content {
       padding: 2rem;
-      max-width: 800px;
-      margin: auto;
+      text-align: center;
     }
-    h1 {
-      color: #007bff;
-      margin-bottom: 1rem;
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <a href="index.html" class="home-button">FDI</a>
+  </div>
+  <div class="content">
+    <h1>Content Coming Soon</h1>
+  </div>
+  
+  <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
+  <script>
+    let topBtn = document.getElementById("topBtn");
+    window.onscroll = function() {
+      topBtn.style.display = (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) ? "block" : "none";
+    };
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
     }
-    ul {
-      margin-left: 1.5rem;
-      font-size: 1.1rem;
-    }
-    li {
-      margin-bottom: 0.5rem;
-    }
+  </script>
+  <style>
     #topBtn {
       display: none;
       position: fixed;
@@ -57,40 +67,6 @@
       background-color: #0056b3;
     }
   </style>
-</head>
-<body>
-
-  <div class="navbar">
-    <a href="index.html" class="home-button">FDI</a>
-  </div>
-
-  <div class="content">
-    <h1>Project Scope</h1>
-    <p>The platform will let candidates:</p>
-    <ul>
-      <li>Sign up and login securely</li>
-      <li>Attend technical and non-technical tests and join live interviews</li>
-      <li>Have their identity and behaviour checked using tools like:</li>
-      <ul>
-        <li>Face detection</li>
-        <li>Voice matching</li>
-        <li>Screen recording</li>
-        <li>Tab monitoring</li>
-      </ul>
-    </ul>
-  </div>
-
-  <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
-  <script>
-    let topBtn = document.getElementById("topBtn");
-    window.onscroll = function() {
-      topBtn.style.display = (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) ? "block" : "none";
-    };
-    function topFunction() {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-    }
-  </script>
 
 </body>
 </html>
